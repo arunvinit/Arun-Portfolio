@@ -145,6 +145,9 @@ body{
 .content{
     width: 85%;
 }
+ .head3{
+    text-align: center;
+}
 #p1{
     display: none;
 }
