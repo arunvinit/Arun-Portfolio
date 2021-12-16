@@ -155,7 +155,7 @@ body{
 
   @media (max-width:770px){
       .head3{
-          
+          text-align: center;
           flex-direction: column-reverse;
       }
       .RojanaCare, .Memex,.health{
