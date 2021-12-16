@@ -5,6 +5,7 @@
 }
 body{
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 .head1{
     background-color: black;
@@ -29,7 +30,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 12%;
+    margin-top: 14%;
     padding: 5px;
     /* overflow: hidden; */
 }
@@ -52,10 +53,11 @@ body{
     padding: 8px;
     background-color: #ff477e;
     font-weight: bold;
-    
 }
 .img1{
     border-radius: 50%;
+    width: 350px;
+    height: 350px;
 }
 #btnreach:hover{
     box-shadow: 4px 5px 5px 1px #2812eb;
@@ -66,7 +68,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 90%;
+    width: 83%;
 }
 
 .health , .RojanaCare , .Memex{
@@ -75,12 +77,18 @@ body{
     margin: auto;
     color: white;
     padding: 3em;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .content{
-    width: 40%;
+    width: 50%;
 }
+.health .content, .Memex .content{
+    margin-left: 2%;
+}
+/* .img{
+    margin-left: 5%;
+} */
 
 .footer{
     /* background-color: rgba(245, 245, 220, 0.2); */
@@ -89,12 +97,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .fa {
     padding: 10px;
     font-size: 30px;
-    width: 18px;
+    width: 38px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -124,15 +133,41 @@ body{
     background: #8d2315;
     color: white;
   }
+  @media (max-width:1200px){
+  .health , .Memex{
+    flex-direction: column;
+    padding: 15px;
+}
+.RojanaCare {
+    flex-direction: column-reverse;
+    padding: 15px;
+}
+.content{
+    width: 85%;
+}
+#p1{
+    display: none;
+}
+.head1{
+    height: 85vh;
+}
+}
 
   @media (max-width:770px){
       .head3{
+          
           flex-direction: column-reverse;
+      }
+      .RojanaCare, .Memex,.health{
+          width: 95%;
+      }
+      .main{
+        width: 100%;
       }
 
       .img1{
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
       }
       .head1{
           height: auto;
@@ -156,27 +191,17 @@ body{
         justify-content: space-evenly;
       }
     .content {
-        width: 90%;
-    }
-    .c4{
-        width: 80%;
+        width: 100%;
     }
 
-      .health , .Memex{
-          flex-direction: column;
-          padding: 15px;
-      }
-      .RojanaCare {
-          flex-direction: column-reverse;
-          padding: 15px;
-      }
-      .img{
-          height: 130px;
-          width: 260px;
-      }
+    .c4{
+        width: 90%;
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+
       .footer{
           margin-top: auto;
-          font-size: 12px;
           height: 7vh;
       }
   }
