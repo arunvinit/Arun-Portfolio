@@ -12,6 +12,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      #tmp{
+        width: 30%;
+        height: 0.8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: #ff477e;
+      }
+      .experience{
+        width: 85%;
+        height: 40vh;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin: auto;
+        position: relative;
+      }
+
+
+      .synps,.axis{
+        width: 40%;
+        height: 40vh;
+        
+        background-color: rgba(255, 255, 255, 0.084);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .synps img{
+        mix-blend-mode:difference;
+      }
+      .axis img{
+        mix-blend-mode: lighten;
+      }
+      
+    </style>
   </head>
   <body>
     <div class="head1">
@@ -41,13 +81,44 @@
       <div class="head3" >
           <div class="c4">
               <p style="color: #ff477e; font-family:cursive" id="p"> </p><p style="color: #ff477e; font-family:cursive" id="p">A Creative Web Developer ! </p>
-              <p style="color: white; margin-top: 3%;" id="p1">I am currently persuing my B. Tech Degree from National Institute of Technology ,Kurukshetra in Computer Engineering Branch . I am a Programmer with knowledge of C and C++ Programming Language . I am a Web Developer who uses his creativity for making Beautiful Websites . I am having the Knowledge of HTML5 , CSS3 , Javascript , Bootstrap , NodeJs , ExpressJs.<br> Apart from this I have a great understanding of Data Structures and Algorithms using C++.</p>
+              <p style="color: white; margin-top: 3%;" id="p1">I am currently working at Synopsys Inc. from July 2023 as Research and Development Engineer 1,<br>I have done my B. Tech Degree from National Institute of Technology ,Kurukshetra in Computer Engineering Branch . I am a Programmer with knowledge of C and C++ Programming Language . I am a Web Developer who uses his creativity for making Beautiful Websites . I am having the Knowledge of HTML5 , CSS3 , Javascript , Bootstrap , NodeJs , ExpressJs.<br> Apart from this I have a great understanding of Data Structures and Algorithms using C++.</p>
               <br>
               <span id="btnreach" style="text-align: center;"> <a href="https://www.linkedin.com/in/arun-kumar-2833821b4/" style="text-decoration: none; color: black;"> Reach ME!!</a></span>
             </div>
-          <div class="c5"  data-aos="zoom-in-down"> <img class="img1" src="myimg1.jpg" alt=""></div>
+          <div class="c5"  data-aos="zoom-in-down"> <img class="img1" src="myimg2.jpg" alt=""></div>
       </div>
     </div>
+
+    <div class="exp">
+      <h2 style="text-align: center; color: white;">My Work Experience</h2>
+      <span id="tmp" style="width: 40%; margin-bottom: 30px;"></span>
+    </div>
+    <div class="experience">
+      <div class="synps" style="position: relative;">
+        <div class="img" style="width: 80%;">
+          <img src="syn.png" alt="" style="width: 100%;height: auto;">
+        </div>
+        <div class="middle">
+          <div id="cname">FTE at Company : Synopsys Inc.</div>
+          <div id="position">As R&D Engineer 1.</div>
+          <div id="duration">Started : July 2023 </div>
+          <div>Ended : Currently Working</div>
+        </div>
+        
+      </div>
+      <div class="axis" style="position: relative;">
+        <div class="img" style="width: 80%;">
+          <img src="Axis_Bank_logo.svg.png" alt="" style="width: 100%; height: auto;">
+        </div>
+        <div class="middle">
+          <div id="cname">Internship at Company : Axis Bank Pvt Ltd.</div>
+          <div id="position">As Full Stack Developer.</div>
+          <div id="duration">Started : January 2022 </div>
+          <div>Ended : July 2022</div>
+        </div>
+      </div>
+    </div>
+
     <div class="main">
       <div class="RojanaCare" data-aos="zoom-in-down">
         <div class="content">
@@ -95,6 +166,12 @@
         </div>
         
     </div>
+    <section>
+      <div class="ending" style="color: white; text-align: center; font-size: 2rem;">
+        That's All For Now :)
+        <span id="tmp"></span>
+      </div>
+    </section>
     <div class="footer">
       <p>©Copyright  All contents here belong to Arun </p>
     </div>
@@ -102,11 +179,12 @@
     <script>
       const text=document.getElementById('p');
       i=0;
-      str='Hii there !, I am Arun👨‍🎓 ';
+      str='Hii there !, I am Arun🧑‍🎓 ';
     var interval = setInterval(function () {
       text.innerHTML += str[i];
       i++;
       if (i == str.length) {
+        
         func();
       }
     }, 130);
